@@ -25,6 +25,20 @@ class Fibonacci:
 Напишите класс, объектом которого будет итератор производящий только
 чётные числа до n включительно.
 """
+class Even:
+    def __init__(self, number):
+        self.number = number
+        self.first = 0
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        even = self.first
+        if even > self.number:
+            raise StopIteration
+        self.first += 2
+        return even
 
 
 """
