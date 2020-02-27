@@ -46,6 +46,22 @@ class Even:
 Напишите итератор factorials(n), генерирующий последовательность
 факториалов натуральных чисел.
 """
+class Factorial:
+    def __init__(self, number):
+        self.number = number
+        self.first = 1
+        self.result = 1
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.first <= self.number:
+            self.result *= self.first
+            self.first += 1
+            return self.result
+        else:
+            raise StopIteration
 
 
 """
