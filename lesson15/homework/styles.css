@@ -2,3 +2,51 @@ img.task {
     height: 200px;
     /*max-width: 500px;*/
 }
+
+table {
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+td, tr{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    padding: 5px;
+}
+
+.B{
+    text-align: center;
+    padding-right: 40px;
+    
+}
+
+.A{
+    padding-right: 80px;
+}
+
+.C{
+    text-align: center;
+}
+
+.D div{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 26px;
+}
+
+.Black {
+   background: black;
+}
+
+.Blue {
+    background: steelblue;
+}
+
+.D div:hover {
+    background: orange;
+}
